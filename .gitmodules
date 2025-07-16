@@ -1,0 +1,3 @@
+[submodule "opengametools"]
+	path = opengametools
+	url = https://github.com/jpaver/opengametools.git
