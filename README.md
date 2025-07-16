@@ -25,6 +25,9 @@ Build the .lib and .a files required for these bindings.
 
 ### Windows
 
+> ![NOTE]
+> This library already provides prebuilt libraries for x86_64 Windows, so you most likely don't need to do any of this.
+
 ```batch
 git clone https://github.com/zeozeozeo/odin-opengametools.git
 cd odin-opengametools
