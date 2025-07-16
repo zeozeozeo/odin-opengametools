@@ -1,10 +1,10 @@
-package ogt
+package ogt_vox
 
 import "core:c"
 import "core:fmt"
 
-when ODIN_OS == .Windows do foreign import ogt_vox "wrapper/ogt_vox.lib"
-when ODIN_OS == .Linux do foreign import ogt_vox "wrapper/ogt_vox.a"
+when ODIN_OS == .Windows do foreign import ogt_vox_foreign "../wrapper/ogt_vox.lib"
+when ODIN_OS == .Linux do foreign import ogt_vox_foreign "../wrapper/ogt_vox.a"
 
 // Constants
 INVALID_GROUP_INDEX :: 0xFFFFFFFF
@@ -218,7 +218,7 @@ Free_Func :: #type proc "c" (ptr: rawptr)
 // Progress feedback function with option to cancel a ogt_vox_write_scene operation. Percentage complete is approximately given by: 100.0f * progress.
 Progress_Callback_Func :: #type proc "c" (progress: f32, user_data: rawptr) -> bool
 
-foreign ogt_vox {
+foreign ogt_vox_foreign {
 	// Transform utilities
 	@(link_name = "ogt_vox_transform_get_identity")
 	transform_get_identity :: proc() -> Transform ---

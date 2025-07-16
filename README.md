@@ -5,6 +5,7 @@ Odin bindings for [open game tools](https://github.com/jpaver/opengametools), a 
 Contains bindings for the following libraries:
 
 - [ogt_vox](https://github.com/jpaver/opengametools/blob/master/src/ogt_vox.h) a MagicaVoxel scene reader, writer and merger
+- [ogt_voxel_meshify](https://github.com/jpaver/opengametools/blob/master/src/ogt_voxel_meshify.h) a few routines to convert voxel grid data to triangle mesh
 
 # ogt_vox: MagicaVoxel scene reader, writer and merger
 
@@ -13,6 +14,10 @@ Please refer to the [readme of open game tools](https://github.com/jpaver/openga
 ## Usage
 
 See [demo_vox.odin](/examples/demo_vox.odin) for a simple example.
+
+# ogt_voxel_meshify: converts voxel grid data to triangle mesh data
+
+Please refer to the [readme of open game tools](https://github.com/jpaver/opengametools?tab=readme-ov-file#ogt_voxel_meshify-converts-voxel-grid-data-to-triangle-mesh-data).
 
 # Building
 

@@ -1,7 +1,7 @@
 // port of demo/demo_vox.cpp
 package demo
 
-import ogt ".."
+import ogt "../ogt_vox"
 import "core:fmt"
 import "core:os"
 import "core:slice"
