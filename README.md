@@ -37,6 +37,9 @@ build_wrapper.bat
 
 ### Linux, MacOS, BSD, ...
 
+> [!NOTE]
+> This library provides a prebuilt library for Linux built on the 6.15.6-arch1-1 x86_64 kernel. YMMV with them, but running `build_wrapper.sh` should always work.
+
 ```bash
 git clone https://github.com/zeozeozeo/odin-opengametools.git
 cd odin-opengametools
